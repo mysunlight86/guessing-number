@@ -14,14 +14,10 @@ let guessNumber = function() {
 
         if (numberUser === null) {
             return;
-        }
-
-        if (!isNum(numberUser)) {
+        } else if (!isNum(numberUser)) {
             alert('Введи число!');
             gameLoop();
-        }
-
-        if (numberUser > numberRandom) {
+        } else if (numberUser > numberRandom) {
             alert('Загаданное число меньше');
             gameLoop();
         } else if (numberUser < numberRandom) {
